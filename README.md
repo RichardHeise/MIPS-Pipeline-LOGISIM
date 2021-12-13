@@ -1,3 +1,12 @@
+# Trabalho para Arquitetura de Computadores
+
+- Esse trabalho utilizou-se de uma implementação de MIPS pré-feita, os créditos estão ao final.
+- O objetivo desse trabalho foi implementar uma cache simples (com base nesse link: https://curtsinger.cs.grinnell.edu/teaching/2015F/CSC211L/labs/lab11/) L1 com 4 entradas e endereço de 8 bits, sendo 4 de tag, 2 de index e mais 2 de offset. 
+- O trabalho inteiro foi feito no LOGISIM.
+- Testes das instruções podem ser encontradas na pasta testes. A implementação foi feita no MIPS Pipeline.
+
+
+Link para o MIPS: https://github.com/jsingh07/MIPS-Logisim
 # MIPS-Logisim
 Author Jagdeep Singh & Muhammed Shafiq
 

@@ -1,0 +1,8 @@
+v2.0 raw
+2009fff3  reg9 <- reg0 (sempre 0) + fff3 
+AC090000  [0x0000 + reg0] <- reg9 (RAM[0] = fff3)
+2008fff4  reg8 <- reg0 + fff4
+AC0800C0  [0x00C0 + reg0] <- reg8 (RAM[0C) = fff4)
+8C0a0000  regA <- [0x0000 + reg0] (regA = fff3 #causa um miss proposital)
+
+Esse arquivo tem como objetivo testar apenas um miss a fim de forçar essa situação.

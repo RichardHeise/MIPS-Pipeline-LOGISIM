@@ -1,0 +1,20 @@
+v2.0 raw
+2009fff3  reg9 <- reg0 (sempre 0) + fff3 
+AC090000  [0x0000 + reg0] <- reg9 (RAM[0] = fff3)
+
+2009fff4  reg9 <- reg0 + fff4 
+AC090004  [0x0004 + reg0] <- reg9 (RAM[4] = fff4)
+
+2009fff5  reg9 <- reg0 + fff5 
+AC090008  [0x0008 + reg0] <- reg9 (RAM[8] = fff5)
+
+2009fff6  reg9 <- reg0 + fff6 
+AC09000c  [0x000c + reg0] <- reg9 (RAM[c] = fff6)
+
+2008fff7  reg8 <- reg0 + fff7 
+AC0800C0  [0x00C0 + reg0] <- reg8 (RAM[C0] = fff7)
+8C0a0000  regA <- [reg0 + 0x0000] (regA = RAM[0] #Isso força um miss)
+
+Esse arquivo explica as instrução em miss_poluicao.txt. O objetivo aqui é poluir todas as entradas da cache com valores arbitrários
+e forçar um miss a fim de testar se a escrita em uma entrada específica está, de fato, funcionando. Também é útil para testar misses.
+

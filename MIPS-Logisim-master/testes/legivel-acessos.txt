@@ -1,0 +1,13 @@
+v2.0 raw
+2009fff3  reg9 <- fff3 + reg0 ( reg9 = fff3 #O regitrador reg0 é sempre 0) CACHE: 0 RAM: 0
+AC090000  [reg0 + 0x0000] <- reg9 (RAM[0] = fff3) CACHE: 1, RAM: 1
+8C080000  reg8 <- [reg0 + 0000] (reg8 = RAM[0]) CACHE: 2, RAM: 1
+2009ffff  reg 9 <- [ffff + reg0] CACHE: 2, RAM: 1
+AC090001  [reg0 + 0x0001] <- reg9 CACHE: 3, RAM: 2
+8C080001  reg8 <- [reg0 + 0x0001] CACHE: 4, RAM: 2
+AC090011  [reg0 + 0x0011] <- reg9 CACHE: 5, RAM: 3
+8C0c0011  regc <- [reg0 + 0x0011] CACHE: 6, RAM: 3
+AC09fffb  [reg0 + 0xfffb] <- reg9 CACHE: 7, RAM: 4
+8C08fffb  reg8 <- [reg0 + 0xfffb] CACHE: 8, RAM: 4
+
+Esse arquivo tem como objetivo testar os acessos à cache (hits e escritas) e acessos à RAM (misses e escritas) separadamente.
